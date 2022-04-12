@@ -75,5 +75,16 @@ h1{
 }
 .itemMenu{
     text-decoration: none;
-    color: black;
+    color: white;
+}
+.containerArtistInfo{
+    width: 40%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.integrantes{
+    background-color: rgb(179, 56, 56);
+    width: 30%;
+    padding: 0.4%;
+    text-align: center;
 }
