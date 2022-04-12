@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(82, 80, 80);
+    color: white;
+}
+.logo{
+    width: 20%;
+    border-radius:150px;
+}
+.containerLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(179, 56, 56);
+    width: 30%;
+}
+.barraMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.containerArtist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.objetoMenu{
+    color: white;
+    background-color: rgb(179, 56, 56);
+    padding: 10px;
+    margin: 5px;
+}
+.rels{
+    width: 25%;
+}
+.hRels{
+    color: white;
+    background-color: rgb(179, 56, 56);
+    width: 25%;
+    text-align: center;
+}
+.hArtistas{
+    background-color: rgb(179, 56, 56);
+    width: 40%;
+    text-align: center;
+    color: white;
+}
+.containerFyT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerArtistInfo{
+    background-color: rgb(179, 56, 56);
+}
+.menuFinal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(179, 56, 56);
+    padding: 10px;
+    margin: 5px;
+}
+.buscarButton{
+    text-decoration: none;
+    color: black;
+}
+.itemMenu{
+    text-decoration: none;
+    color: black;
+}
