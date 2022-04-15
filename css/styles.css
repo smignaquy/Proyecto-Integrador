@@ -77,7 +77,7 @@ artist
     align-items: center;
 }
 .rels{
-    width: 70%;
+    width: 40%;
     background-color: rgb(179, 56, 56);
     padding: 2%;
     border-color: white;
@@ -135,7 +135,7 @@ artist
     width: 100%
 }
 .containerTop{
-    height: 50%;
+    height: 60%;
     width: 100%;
 }
 .containerOyentes{
