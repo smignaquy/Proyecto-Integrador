@@ -134,6 +134,17 @@ artist
 .topCanciones{
     width: 100%
 }
+<<<<<<< HEAD
+
+.indexhtml { 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.playlisthtml { 
+=======
 .containerTop{
     height: 60%;
     width: 100%;
@@ -149,12 +160,19 @@ artist
     width: 100%   
 }
 .containerArtist{
+>>>>>>> 94623d4520f343c6f334e008b3d8836b943fe1ca
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 5px;
 }
 
+<<<<<<< HEAD
+.genreshtml  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+=======
 album
 
 .albumTitle{
@@ -163,6 +181,7 @@ album
     border-color: white;
     border-style: ridge;
     border-width: 5px;
+>>>>>>> 94623d4520f343c6f334e008b3d8836b943fe1ca
 }
 .hLaIsla{
     background-color: rgb(179, 56, 56);
