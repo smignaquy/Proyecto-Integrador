@@ -214,7 +214,9 @@ artist
     flex-direction: row;
 }
 .imgIndex{
+    background-color: rgb(179, 56, 56);
     width: 5%;
+    padding: 0.5%;
 }
 
 
