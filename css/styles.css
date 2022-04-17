@@ -220,6 +220,65 @@ artist
 }
 
 
+
+.genero{
+    background-color: rgb(179, 56, 56);
+    padding: 1%;
+    width: 50%;
+    margin: 1%;
+}
+.itemGenero{
+    color: white;
+    text-decoration: none;
+}
+
+
+.hTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+.relsTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    height: 20%;
+}
+.hVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 20%;
+    margin-left: 5%;
+}
+.containerTrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imgVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+.containerVerano{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.containerTrackInfo{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    margin-left: 5%;
+}
+.frameSpotify{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    margin-top: 5%;
+}
+
+
+
 @media (max-width: 768px) {
     body{
         font-size: small;
