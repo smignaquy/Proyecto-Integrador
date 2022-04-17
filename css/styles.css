@@ -63,6 +63,7 @@ h1{
 }
 .botonPlaylist{
     margin-bottom: 4%;
+    margin-top: 4%;
 }
 
 artist
@@ -210,11 +211,14 @@ artist
     background-color: rgb(179, 56, 56);
     width: 20%;
     padding: 0.5%;
+    text-align: center;
 }
 .objetoIndex{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .imgIndex{
     background-color: rgb(179, 56, 56);
