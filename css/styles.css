@@ -5,6 +5,9 @@ body{
 .logo{
     width: 20%;
     border-radius:150px;
+    border-color: black;
+    border-style: inset;
+    border-width: 10px;
 }
 .containerLogo{
     display: flex;
@@ -18,7 +21,6 @@ body{
 }
 h1{
     text-align: center;
-    color: white;
     background-color: rgb(179, 56, 56);
     width: 30%;
 }
@@ -27,39 +29,9 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.containerArtist{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .objetoMenu{
-    color: white;
     background-color: rgb(179, 56, 56);
-    padding: 10px;
-    margin: 5px;
-}
-.rels{
-    width: 25%;
-}
-.hRels{
-    color: white;
-    background-color: rgb(179, 56, 56);
-    width: 25%;
-    text-align: center;
-}
-.hArtistas{
-    background-color: rgb(179, 56, 56);
-    width: 40%;
-    text-align: center;
-    color: white;
-}
-.containerFyT{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.containerArtistInfo{
-    background-color: rgb(179, 56, 56);
+    padding: 0.5%;
 }
 .menuFinal{
     display: flex;
@@ -75,5 +47,312 @@ h1{
 }
 .itemMenu{
     text-decoration: none;
-    color: black;
+    color: white;
 }
+.integrantes{
+    background-color: rgb(179, 56, 56);
+    width: 30%;
+    padding: 0.4%;
+    text-align: center;
+
+}
+.borde{
+    border-color: white;
+    border-style: ridge;
+    border-width: 5px;
+}
+
+artist
+
+.containerArtist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgRels{
+    width: 40%;
+    background-color: rgb(179, 56, 56);
+    padding: 2%;
+    border-style: groove;
+}
+.hRels{
+    background-color: rgb(179, 56, 56);
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+    margin-left: 6.5%;
+}
+.hArtistas{
+    background-color: rgb(179, 56, 56);
+    width: 40%;
+    text-align: center;
+    margin: 5px;
+    margin-left: 3.5%;
+}
+.containerFyT{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.containerArtistInfo{
+    background-color: rgb(179, 56, 56);
+    width: 40%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+}
+.artistTodo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -ms-flex-align: start;
+}
+.topCanciones{
+    width: 100%
+}
+.containerTop{
+    height: 60%;
+    width: 100%;
+}
+.containerOyentes{
+    height: 50%;
+    width: 100%;
+}
+.ulTemas{
+    width: 100%
+}
+.oyentes{
+    width: 100%   
+}
+.containerArtist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+}
+
+
+
+.hAlbum{
+    background-color: rgb(179, 56, 56);
+    width: 30%;
+    text-align: center;
+    margin: 5px;
+    margin-left: 6.5%;
+}
+.hLaIsla{
+    background-color: rgb(179, 56, 56);
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+    margin-left: 8.5%;
+}
+.containerAlbum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imgLaIsla{
+    background-color: rgb(179, 56, 56);
+    padding: 2%;
+    width: 70%;
+}
+.containerAlbumImg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 2%;
+}
+.containerAlbum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.containerAlbumInfo{
+    background-color: rgb(179, 56, 56);
+    width: 40%;
+    margin: 2%;
+    padding: 2%;
+    padding-top: 1%;
+}
+.generoLaIsla{
+    height: 10%;
+}
+.publicacionLaIsla{
+    height: 10%;
+}
+.temasLaIsla{
+    height: 40%;
+}
+
+
+.indexLista{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
+}
+.itemIndex{
+    text-decoration: none;
+    color: white;
+}
+.hIndex{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+}
+.objetoIndex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imgIndex{
+    background-color: rgb(179, 56, 56);
+    width: 5%;
+    padding: 0.5%;
+}
+
+
+
+.genero{
+    background-color: rgb(179, 56, 56);
+    padding: 1%;
+    width: 50%;
+    margin: 1%;
+}
+.itemGenero{
+    color: white;
+    text-decoration: none;
+}
+
+
+.hTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+.relsTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    height: 20%;
+}
+.hVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 20%;
+    margin-left: 5%;
+}
+.containerTrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imgVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+.containerVerano{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.containerTrackInfo{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    margin-left: 5%;
+}
+.frameSpotify{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    margin-top: 5%;
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        font-size: small;
+    }
+    .logo{
+        border-width: 8px;
+    }
+    .borde{
+        border-width: 4px;
+    }
+    .objetoMenu{
+        padding: 0.7%;
+    }
+
+
+    .hRels{
+        margin-left: 4.5%;
+    }
+    .integrantes{
+        width: 50%;
+    }
+    .containerTop{
+        height: 60%
+    }
+    
+
+    .hLaIsla{
+        margin-left: 8%;
+    }
+    .imgLaIsla{
+        height: 70%;
+    }
+ }
+
+ @media (max-width: 420px) {
+     body{
+         font-size: xx-small;
+     }
+     .logo{
+         border-width: 5px;
+     }
+     .borde{
+         border-width: 3px;
+     }
+    .objetoMenu{
+        padding: 0.5%;
+        margin: 0.02%;
+        font-size:xx-small;
+        border-width: 3px;
+    }
+    .hRels{
+        margin-left: 3%;
+    }
+    .rels{
+        width: 75%;
+    }
+    .hLaIsla{
+        width: 25%;
+        margin-left: 7%;
+    }
+    .hAlbum{
+        margin-left: 6.5%;
+    }
+    .containerAlbumInfo{
+        width: 45%;
+        padding: 2%;
+        height: 90%;
+    }
+    .integrantes{
+        margin-left: 1.5%;
+    }
+    .objetoMenu{
+        padding: 1%;
+    }
+ }
+ 
+
