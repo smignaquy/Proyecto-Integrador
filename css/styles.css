@@ -296,6 +296,20 @@ artist
 
 
 
+.tituloPlaylist{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+}
+.contenedorTitulo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
 
 @media (max-width: 768px) {
     body{
@@ -379,4 +393,5 @@ artist
       align-items: center;
       justify-content: space-around;
   }
+
 
