@@ -296,6 +296,7 @@ artist
 
 
 
+<<<<<<< HEAD
 .tituloPlaylist{
     background-color: rgb(179, 56, 56);
     padding: 0.8%;
@@ -309,6 +310,48 @@ artist
 
 
 
+=======
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imgDetailGenres{
+    width: 20%;
+    background-color: rgb(179, 56, 56);
+    padding: 1%;
+}
+.hArtistaTrap{
+    background-color: rgb(179, 56, 56);
+    padding: 1%;
+    margin-left: 5%;
+    height: 20%;
+    text-align: center;
+}
+.generoLista{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
+}
+.itemGenero{
+    text-decoration: none;
+    color: white;
+}
+.objetoGenero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.imgGenero{
+    background-color: rgb(179, 56, 56);
+    width: 5%;
+    padding: 0.5%;
+}
+>>>>>>> 1c56ffe846afb472b723bf391f733205e220b565
 
 
 @media (max-width: 768px) {
@@ -385,6 +428,7 @@ artist
     .objetoMenu{
         padding: 1%;
     }
+<<<<<<< HEAD
 
   .trapartistas{
       display: flex;
@@ -395,3 +439,6 @@ artist
   }
 
 
+=======
+}
+>>>>>>> 1c56ffe846afb472b723bf391f733205e220b565

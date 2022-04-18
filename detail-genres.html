@@ -9,20 +9,27 @@
 </head>
 <body>
     <header>
-        <img src="https://media.istockphoto.com/vectors/music-note-icon-black-minimalist-icon-isolated-on-white-background-vector-id866757280?k=20&m=866757280&s=612x612&w=0&h=HrsQt0p1BfRx6CB17q1jJ55F-uR3hk5OCRqvHEwtJn4=" alt="Logo" class="logo">
-        <h1 class="NombrePag borde">Nombre Pag</h1>
-        <form action="detail-results.html" method="GET">
-            <label for="busqueda">Buscar:</label>
-            <input type="text" name="busqueda" id="busqueda" value="">
-            <button type="submit">Buscar</button>
-        </form>
-        <nav>
-            <ul type="none" class="barraMenu">
-                    <li class="objetoMenu borde"><a href="detail-artist.html" class="itemMenu">Artistas</a></li>
-                    <li class="objetoMenu borde"><a href="detail-track.html" class="itemMenu">Canciones</a></li>
-                    <li class="objetoMenu borde"><a href="detail-album.html" class="itemMenu">Albums</a></li>
-                    <li class="objetoMenu borde"><a href="genres.html" class="itemMenu">Generos</a></li>
-                    <li class="objetoMenu borde"><a href="playlist.html" class="itemMenu">Playlist</a></li>
+        <div class="containerLogo">
+            <img src="https://media.istockphoto.com/vectors/music-note-icon-black-minimalist-icon-isolated-on-white-background-vector-id866757280?k=20&m=866757280&s=612x612&w=0&h=HrsQt0p1BfRx6CB17q1jJ55F-uR3hk5OCRqvHEwtJn4=" alt="Logo" class="logo">
+            </div>
+            <div class="containerName">
+            <h1 class="NombrePag borde">Musical</h1>
+            </div>
+            <form action="search-results.html" method="GET" class="formulario">
+                <label for="busqueda">Buscar:</label>
+                <input type="text" name="busqueda" id="busqueda" value="" class="barraBuscador">
+                <button type="submit"><a href="search-results.html" class="buscarButton">Buscar</a></button>
+            </form>
+            <nav>
+                <ul type="none" class="barraMenu" menuHead>
+                    <li class="objetoMenu borde"><a href="index.html" class="itemMenu">HOME</a></li>
+                    <li class="objetoMenu borde"><a href="detail-artist.html" class="itemMenu">ARTISTAS</a></li>
+                    <li class="objetoMenu borde"><a href="detail-track.html" class="itemMenu">CANCIONES</a></li>
+                    <li class="objetoMenu borde"><a href="detail-album.html" class="itemMenu">ALBUMS</a></li>
+                    <li class="objetoMenu borde"><a href="genres.html" class="itemMenu">GENEROS</a></li>
+                    <li class="objetoMenu borde"><a href="playlist.html" class="itemMenu">PLAYLIST</a></li>
+                </ul>
+            </nav>
             </ul>
         </nav>
     </header>
@@ -30,31 +37,35 @@
 <h1 class="borde">Trap</h1>
 
 <section class="trapartistas">
+    <ul type="none"> 
+        <div class="objetoGenero"> 
+            <img src="https://www.filo.news/__export/1624470918699/sites/claro/img/2021/06/23/duki_portada.jpg_375108804.jpg" alt="Foto DUKI" class="imgGenero borde">
+            <li class="generoLista borde"><a href="detail-artist.html" class="itemGenero">Duki</a></li> 
+        </div>
 
- <article class="dukitrap todos">
-    <h2>Duki</h2>
-    <img src="https://los40es00.epimg.net/los40/imagenes/2019/07/03/musica/1562149419_336088_1562151870_noticia_normal.jpg" alt="">
- </article>
+        <div class="objetoGenero"> 
+            <img src="https://yt3.ggpht.com/gCzmAWJBMGq8oWajAUs6UVzw1V0I2WSRYOv-nTsmmW9WK384gh9nJm1BVnfAmGqRYKjDytAcTw=s900-c-k-c0x00ffffff-no-rj" alt="Foto Bad Bunny" class="imgGenero borde">
+            <li class="generoLista borde"><a href="detail-artist.html" class="itemGenero">Bad Bunny</a></li> 
+        </div>
+        
 
-<article class="badbunnytrap todos">
-    <h2>Bad Bunny</h2>
-    <img src="https://yt3.ggpht.com/gCzmAWJBMGq8oWajAUs6UVzw1V0I2WSRYOv-nTsmmW9WK384gh9nJm1BVnfAmGqRYKjDytAcTw=s900-c-k-c0x00ffffff-no-rj" alt=""> 
-</article>
+        <div class="objetoGenero"> 
+            <img src="https://yt3.ggpht.com/0viwiqEYRfNqMxryJh4kAT9PaPdENDVkSps_J77RH0XhW_A3hWnLftay4ikRokf0U-MBzDQG0M8=s900-c-k-c0x00ffffff-no-rj" alt="Foto Anuel AA" class="imgGenero borde">
+            <li class="generoLista borde"><a href="detail-artist.html" class="itemGenero">Anuel AA</a></li> 
+        </div>
 
-<article class="anuelaatrap todos">
-    <h2>Anuel AA</h2>
-    <img src="https://yt3.ggpht.com/0viwiqEYRfNqMxryJh4kAT9PaPdENDVkSps_J77RH0XhW_A3hWnLftay4ikRokf0U-MBzDQG0M8=s900-c-k-c0x00ffffff-no-rj" alt="">
-</article>
 
-<article class="paulolondratrap todos">
-    <h2>Paulo Londra</h2>
-    <img src="https://www.lavoz.com.ar/resizer/F05XTK6Rs2X32XUctcV5_op_Baw=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/4DGKROQFURFQ5OSUQWFYLI4AYY.jpg" alt="">
-</article>
+        <div class="objetoIndex"> 
+            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/03/24/16481240870123.jpg" alt="Foto Paulo" class="imgIndex borde">
+            <li class="indexLista borde"><a href="detail-artist.html" class="itemIndex">Paulo Londra </a></li>
+        </div>
 
-<article class="truenotrap todos">
-    <h2>Trueno </h2>
-    <img src="https://i0.wp.com/elestilolibre.com/wp-content/uploads/2020/07/5-Trueno-musica.jpg?fit=1080%2C1080&ssl=1" alt="">
-</article> 
+        <div class="objetoIndex"> 
+            <img src="https://i0.wp.com/elestilolibre.com/wp-content/uploads/2020/07/5-Trueno-musica.jpg?fit=1080%2C1080&ssl=1" alt="Foto Trueno" class="imgIndex borde">
+            <li class="indexLista borde"><a href="detail-artist.html" class="itemIndex"> Trueno </a></li>
+        </div>
+
+    </ul>
      
 
 <footer>
