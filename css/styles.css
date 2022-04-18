@@ -107,7 +107,7 @@ h1{
     width: 15%;
     text-align: center;
     margin: 5px;
-    margin-left: 6.5%;
+    margin-left: 5.5%;
 }
 
 .artistTodo{
@@ -292,6 +292,10 @@ h1{
     width: 30%;
     text-align: center;
 }
+.itemIndex{
+    text-decoration: none;
+    color: white;
+}
 
 .genero{
     background-color: rgb(179, 56, 56);
@@ -303,6 +307,8 @@ h1{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .itemGenero{
@@ -477,7 +483,7 @@ h1{
 
 
     .hRels{
-        margin-left: 4.5%;
+        margin-left: 5%;
     }
     .integrantes{
         width: 50%;
@@ -495,6 +501,14 @@ h1{
     }
     .hVerano{
         width: 40%;
+    }
+
+    .genero{
+        width: 20%;
+    }
+
+    .contenedorResultados{
+        width: 35%;
     }
  }
 
@@ -515,7 +529,7 @@ h1{
         border-width: 3px;
     }
     .hRels{
-        margin-left: 3%;
+        margin-left: 4%;
     }
     .rels{
         width: 75%;
