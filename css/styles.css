@@ -1,14 +1,16 @@
 body{
     background-color: rgb(82, 80, 80);
     color: white;
-}
-.logo{
+ }
+
+ .logo{
     width: 20%;
     border-radius:150px;
     border-color: black;
     border-style: inset;
     border-width: 10px;
-}
+ }
+ 
 .containerLogo{
     display: flex;
     flex-direction: column;
@@ -19,73 +21,49 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 h1{
     text-align: center;
     background-color: rgb(179, 56, 56);
     width: 30%;
+ }
+
+
+.buscarButton{
+    text-decoration: none;
+    color: black;
 }
+
 .barraMenu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .objetoMenu{
     background-color: rgb(179, 56, 56);
     padding: 0.5%;
 }
-.menuFinal{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgb(179, 56, 56);
-    padding: 10px;
-    margin: 5px;
-}
-.buscarButton{
-    text-decoration: none;
-    color: black;
-}
+
 .itemMenu{
     text-decoration: none;
     color: white;
 }
-.integrantes{
-    background-color: rgb(179, 56, 56);
-    width: 30%;
-    padding: 0.4%;
-    text-align: center;
 
-}
 .borde{
     border-color: white;
     border-style: ridge;
     border-width: 5px;
 }
-.botonPlaylist{
-    margin-bottom: 4%;
-    margin-top: 4%;
-}
 
-artist
-
-.containerArtist{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.imgRels{
-    width: 40%;
+.hIndex{
     background-color: rgb(179, 56, 56);
-    padding: 2%;
-    border-style: groove;
-}
-.hRels{
-    background-color: rgb(179, 56, 56);
-    width: 15%;
+    width: 20%;
+    padding: 0.5%;
     text-align: center;
-    margin: 5px;
-    margin-left: 6.5%;
+    margin-top: 6%;
 }
+
 .hArtistas{
     background-color: rgb(179, 56, 56);
     width: 40%;
@@ -93,6 +71,52 @@ artist
     margin: 5px;
     margin-left: 3.5%;
 }
+
+.indexLista{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
+}
+
+.objetoIndex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.containerArtist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hArtistas{
+    background-color: rgb(179, 56, 56);
+    width: 40%;
+    text-align: center;
+    margin: 5px;
+    margin-left: 3.5%;
+}
+
+.hRels{
+    background-color: rgb(179, 56, 56);
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+    margin-left: 6.5%;
+}
+
+.artistTodo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -ms-flex-align: start;
+}
+
 .containerFyT{
     width: 50%;
     display: flex;
@@ -100,6 +124,7 @@ artist
     flex-direction: column;
     align-items: center;
 }
+
 .containerArtistInfo{
     background-color: rgb(179, 56, 56);
     width: 40%;
@@ -109,36 +134,101 @@ artist
     flex-wrap: wrap;
     align-items: left;
 }
-.artistTodo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    -ms-flex-align: start;
-}
-.topCanciones{
-    width: 100%
-}
+
 .containerTop{
     height: 60%;
     width: 100%;
 }
+
+.topCanciones{
+    width: 100%
+}
+
+.ulTemas{
+    width: 100%
+}
+
 .containerOyentes{
     height: 50%;
     width: 100%;
 }
-.ulTemas{
-    width: 100%
-}
+
 .oyentes{
     width: 100%   
 }
-.containerArtist{
+
+.containerTrack{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 5px;
 }
 
+
+.hTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+
+.hVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.containerVerano{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imgVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+
+.containerTrackInfo{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.relsTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    height: 20%;
+}
+
+.trackAlbum{
+    height: 20%;
+}
+
+.botonSpotify{
+    background-color: rgb(179, 56, 56);
+    padding: 0.2%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hSpotify{
+    text-decoration: none;
+    color: white;
+}
+
+.containerAlbum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
 .hAlbum{
     background-color: rgb(179, 56, 56);
@@ -147,6 +237,7 @@ artist
     margin: 5px;
     margin-left: 6.5%;
 }
+
 .hLaIsla{
     background-color: rgb(179, 56, 56);
     width: 15%;
@@ -154,29 +245,19 @@ artist
     margin: 5px;
     margin-left: 8.5%;
 }
+
 .containerAlbum{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 .imgLaIsla{
     background-color: rgb(179, 56, 56);
     padding: 2%;
     width: 70%;
 }
-.containerAlbumImg{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    margin: 2%;
-}
-.containerAlbum{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+
 .containerAlbumInfo{
     background-color: rgb(179, 56, 56);
     width: 40%;
@@ -184,49 +265,33 @@ artist
     padding: 2%;
     padding-top: 1%;
 }
+
 .generoLaIsla{
     height: 10%;
 }
+
 .publicacionLaIsla{
     height: 10%;
 }
+
 .temasLaIsla{
     height: 40%;
 }
 
-
-.indexLista{
-    background-color: rgb(179, 56, 56);
-    width: 20%;
-    padding: 0.5%;
-    margin: 2%;
-    text-align: center;
-}
-.generoIndex{
-    text-decoration: none;
-    color: white;
-}
-.hIndex{
-    background-color: rgb(179, 56, 56);
-    width: 20%;
-    padding: 0.5%;
-    text-align: center;
-    margin-top: 6%;
-}
-.objetoIndex{
+.containerTituloGeneros{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
-.imgIndex{
+
+.tituloGeneros{
     background-color: rgb(179, 56, 56);
-    width: 5%;
     padding: 0.5%;
+    width: 30%;
+    text-align: center;
 }
-
-
 
 .genero{
     background-color: rgb(179, 56, 56);
@@ -239,6 +304,20 @@ artist
     flex-direction: column;
     align-items: center;
 }
+
+.itemGenero{
+    text-decoration: none;
+    color: white;
+}
+
+.trapartistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .objetoGenero{
     display: flex;
     flex-wrap: wrap;
@@ -246,11 +325,13 @@ artist
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 .imgGenero{
     background-color: rgb(179, 56, 56);
     width: 5%;
     padding: 0.5%;
 }
+
 .generoLista{
     background-color: rgb(179, 56, 56);
     width: 20%;
@@ -258,78 +339,18 @@ artist
     margin: 2%;
     text-align: center;
 }
-.itemGenero{
-    text-decoration: none;
-    color: white;
-}
 
-
-.hTrack{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
-}
-.relsTrack{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
-    height: 20%;
-}
-.hVerano{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 20%;
-    margin-left: 5%;
-}
-.containerTrack{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.imgVerano{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
-}
-.containerVerano{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.containerTrackInfo{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
-    margin-left: 5%;
-}
-.frameSpotify{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    margin-top: 5%;
-}
-.trackAlbum{
-    height: 20%;
-}
-.verPlaylist{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    text-decoration: none;
-    color: white;
-
-}
-
-
-
-.tituloPlaylist{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-}
 .contenedorTitulo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     width: 30;
+}
+
+.tituloPlaylist{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
 }
 
 .contenedorSubtitulo {
@@ -339,6 +360,7 @@ artist
     align-items: flex-start;
     width: 30;
 }
+
 .contenedorPlaylist{
     background-color: rgb(179, 56, 56);
     padding: 0.8%;
@@ -350,6 +372,43 @@ artist
     background-color: rgb(179, 56, 56);
     padding: 0.5%;
 }
+
+.containerTrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.hTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+}
+
+.hVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.containerVerano{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.relsTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    height: 20%;
+}
+
+.trackAlbum{
+    height: 20%;
+}
+
 .botonSpotify{
     background-color: rgb(179, 56, 56);
     padding: 0.2%;
@@ -361,32 +420,46 @@ artist
     flex-direction: column;
     align-items: center;
 }
+
 .hSpotify{
     text-decoration: none;
     color: white;
 }
-.trapartistas{
+
+.botonPlaylist{
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.verPlaylist{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    text-decoration: none;
+    color: white;
+
+}
+
+.menuFinal{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: rgb(179, 56, 56);
+    padding: 10px;
+    margin: 5px;
 }
-.tituloGeneros{
+
+.objetoMenu{
     background-color: rgb(179, 56, 56);
     padding: 0.5%;
+}
+
+.integrantes{
+    background-color: rgb(179, 56, 56);
     width: 30%;
+    padding: 0.4%;
     text-align: center;
-}
-.containerTituloGeneros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 
-
+}
 
 @media (max-width: 768px) {
     body{
