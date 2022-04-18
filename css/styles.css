@@ -296,6 +296,47 @@ artist
 
 
 
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imgDetailGenres{
+    width: 20%;
+    background-color: rgb(179, 56, 56);
+    padding: 1%;
+}
+.hArtistaTrap{
+    background-color: rgb(179, 56, 56);
+    padding: 1%;
+    margin-left: 5%;
+    height: 20%;
+    text-align: center;
+}
+.generoLista{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
+}
+.itemGenero{
+    text-decoration: none;
+    color: white;
+}
+.objetoGenero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.imgGenero{
+    background-color: rgb(179, 56, 56);
+    width: 5%;
+    padding: 0.5%;
+}
+
 
 @media (max-width: 768px) {
     body{
@@ -371,12 +412,4 @@ artist
     .objetoMenu{
         padding: 1%;
     }
-
-  .trapartistas{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: space-around;
-  }
-
+}
