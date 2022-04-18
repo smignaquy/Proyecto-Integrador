@@ -371,7 +371,12 @@ artist
     .objetoMenu{
         padding: 1%;
     }
-  
 
- 
+  .trapartistas{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-around;
+  }
 
