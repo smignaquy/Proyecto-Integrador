@@ -202,7 +202,7 @@ artist
     margin: 2%;
     text-align: center;
 }
-.itemIndex{
+.generoIndex{
     text-decoration: none;
     color: white;
 }
@@ -234,9 +234,28 @@ artist
     width: 50%;
     margin: 1%;
 }
+.objetoGenero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.imgGenero{
+    background-color: rgb(179, 56, 56);
+    width: 5%;
+    padding: 0.5%;
+}
+.generoLista{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
+}
 .itemGenero{
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 
@@ -328,7 +347,7 @@ artist
 }
 .botonSpotify{
     background-color: rgb(179, 56, 56);
-    padding: 0.5%;
+    padding: 0.2%;
     margin-bottom: 4%;
     margin-top: 4%;
     width: 20%;
@@ -383,6 +402,9 @@ artist
     .imgLaIsla{
         height: 70%;
     }
+    .hVerano{
+        width: 40%;
+    }
  }
 
  @media (max-width: 420px) {
@@ -421,8 +443,14 @@ artist
     }
     .integrantes{
         margin-left: 1.5%;
+        width: 60%;
     }
     .objetoMenu{
         padding: 1%;
+    }
+
+
+    .contenedorResultados{
+        width: 40%;
     }
 }
