@@ -233,6 +233,11 @@ artist
     padding: 1%;
     width: 50%;
     margin: 1%;
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .itemGenero{
     color: white;
@@ -348,6 +353,19 @@ artist
     align-items: center;
     justify-content: space-around;
 }
+.tituloGeneros{
+    background-color: rgb(179, 56, 56);
+    padding: 0.5%;
+    width: 30%;
+    text-align: center;
+}
+.containerTituloGeneros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 
 
@@ -425,4 +443,16 @@ artist
     .objetoMenu{
         padding: 1%;
     }
-}
+
+
+    .imgIndex{
+        width: 8%;
+    }
+    .indexLista{
+        width: 40%;
+    }
+    
+    .genero {
+        width: 20%;
+    }
+ }
