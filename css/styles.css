@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(82, 80, 80);
     color: white;
@@ -65,8 +66,65 @@ body{
     margin-bottom: 4%;
     margin-top: 4%;
  }
+ .verPlaylist{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    text-decoration: none;
+    color: white;
   
- artist
+ }
+
+
+
+
+
+
+
+
+
+ 
+ .hIndex{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    text-align: center;
+    margin-top: 6%;
+ }
+ .objetoIndex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+ }
+ .imgIndex{
+    background-color: rgb(179, 56, 56);
+    width: 5%;
+    padding: 0.5%;
+ }
+ .indexLista{
+    background-color: rgb(179, 56, 56);
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
+ }
+ .itemIndex{
+    text-decoration: none;
+    color: white;
+ }
+
+
+
+
+
+
+
+
+
+
+  
+
   
  .containerArtist{
     display: flex;
@@ -138,8 +196,83 @@ body{
     flex-direction: row;
     margin: 5px;
  }
-  
-  
+
+
+
+
+
+
+
+
+
+
+.containerTrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ .hTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+ }
+ .hVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    margin-left: 5%;
+ }
+ .containerVerano{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ .imgVerano{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+ }
+ .containerTrackInfo{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    margin-left: 5%;
+ }
+ .relsTrack{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+    width: 40%;
+    height: 20%;
+ }
+ .trackAlbum{
+    height: 20%;
+ }
+ .botonSpotify{
+    background-color: rgb(179, 56, 56);
+    padding: 0.5%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+ }
+ .hSpotify{
+    text-decoration: none;
+    color: white;
+ }
+
+
+
+
+
+
+
+
+
+
+
  .hAlbum{
     background-color: rgb(179, 56, 56);
     width: 30%;
@@ -149,15 +282,10 @@ body{
  }
  .hLaIsla{
     background-color: rgb(179, 56, 56);
-    width: 15%;
+    width: 45%;
     text-align: center;
     margin: 5px;
-    margin-left: 8.5%;
- }
- .containerAlbum{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    margin-left: 7.5%;
  }
  .imgLaIsla{
     background-color: rgb(179, 56, 56);
@@ -195,39 +323,26 @@ body{
  }
   
   
- .indexLista{
-    background-color: rgb(179, 56, 56);
-    width: 20%;
-    padding: 0.5%;
-    margin: 2%;
-    text-align: center;
- }
- .itemIndex{
-    text-decoration: none;
-    color: white;
- }
- .hIndex{
-    background-color: rgb(179, 56, 56);
-    width: 20%;
-    padding: 0.5%;
-    text-align: center;
-    margin-top: 6%;
- }
- .objetoIndex{
+ 
+
+
+
+
+
+ 
+ .containerTituloGeneros{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
  }
- .imgIndex{
+ .tituloGeneros{
     background-color: rgb(179, 56, 56);
-    width: 5%;
     padding: 0.5%;
+    width: 30%;
+    text-align: center;
  }
-  
-  
-  
  .genero{
     background-color: rgb(179, 56, 56);
     padding: 1%;
@@ -243,68 +358,53 @@ body{
     color: white;
     text-decoration: none;
  }
-  
-  
- .hTrack{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
+
+
+
+
+
+
+
+
+ .trapArtistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
  }
- .relsTrack{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
-    height: 20%;
+ .objetoGenero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
  }
- .hVerano{
+ .imgGenero{
     background-color: rgb(179, 56, 56);
-    padding: 0.8%;
+    width: 5%;
+    padding: 0.5%;
+ }
+ .generoLista{
+    background-color: rgb(179, 56, 56);
     width: 20%;
-    margin-left: 5%;
+    padding: 0.5%;
+    margin: 2%;
+    text-align: center;
  }
- .containerTrack{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
- }
- .imgVerano{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
- }
- .containerVerano{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
- }
- .containerTrackInfo{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    width: 40%;
-    margin-left: 5%;
- }
- .frameSpotify{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
-    margin-top: 5%;
- }
- .trackAlbum{
-    height: 20%;
- }
- .verPlaylist{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
+ .itemGeneroDetalle{
     text-decoration: none;
     color: white;
-  
  }
+
   
-  
-  
- .tituloPlaylist{
-    background-color: rgb(179, 56, 56);
-    padding: 0.8%;
- }
+
+
+
+
+
+
+
  .contenedorTitulo{
     display: flex;
     flex-wrap: wrap;
@@ -312,7 +412,10 @@ body{
     align-items: center;
     width: 30;
  }
-  
+ .tituloPlaylist{
+    background-color: rgb(179, 56, 56);
+    padding: 0.8%;
+ }
  .contenedorSubtitulo {
     display: flex;
     flex-wrap: wrap;
@@ -325,47 +428,31 @@ body{
     padding: 0.8%;
     margin-bottom: 5%;
  }
-  
+
+
+
+
+
+
+
+
+
  .contenedorResultados{
-    width: 20%;
+    width: 40%;
     background-color: rgb(179, 56, 56);
     padding: 0.5%;
  }
- .botonSpotify{
-    background-color: rgb(179, 56, 56);
-    padding: 0.5%;
-    margin-bottom: 4%;
-    margin-top: 4%;
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
- }
- .hSpotify{
-    text-decoration: none;
-    color: white;
- }
- .trapartistas{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-around;
- }
- .tituloGeneros{
-    background-color: rgb(179, 56, 56);
-    padding: 0.5%;
-    width: 30%;
-    text-align: center;
- }
- .containerTituloGeneros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
- }
+
+
+
+
+
+
+
+
+
+
+
   
   
   
@@ -382,18 +469,26 @@ body{
     .objetoMenu{
         padding: 0.7%;
     }
+    .integrantes{
+        width: 50%;
+    }
   
+
+
+
+
   
     .hRels{
         margin-left: 4.5%;
-    }
-    .integrantes{
-        width: 50%;
     }
     .containerTop{
         height: 60%
     }
    
+
+
+
+
   
     .hLaIsla{
         margin-left: 8%;
@@ -401,8 +496,25 @@ body{
     .imgLaIsla{
         height: 70%;
     }
+
+
+
+
+
+    .contenedorResultados{
+        width: 40%;
+    }
+    .hVerano{
+        width: 40%;
+    }
  }
   
+
+
+
+
+
+
  @media (max-width: 420px) {
      body{
          font-size: xx-small;
@@ -419,12 +531,49 @@ body{
         font-size:xx-small;
         border-width: 3px;
     }
+    .integrantes{
+        margin-left: 1.5%;
+    }
+    .objetoMenu{
+        padding: 1%;
+    }
+
+
+
+
+
+
+
+
+    .imgIndex{
+        width: 8%;
+    }
+    .indexLista{
+        width: 40%;
+    }
+
+
+
+
+
+
+
+
     .hRels{
         margin-left: 3%;
     }
-    .rels{
+    .imgRels{
         width: 75%;
     }
+
+
+
+
+
+
+
+
+
     .hLaIsla{
         width: 25%;
         margin-left: 7%;
@@ -437,23 +586,25 @@ body{
         padding: 2%;
         height: 90%;
     }
-    .integrantes{
-        margin-left: 1.5%;
-    }
-    .objetoMenu{
-        padding: 1%;
-    }
-  
-  
-    .imgIndex{
-        width: 8%;
-    }
-    .indexLista{
-        width: 40%;
-    }
+
+
+
+
+
+
    
     .genero {
         width: 20%;
+    }
+
+
+
+
+    .contenedorResultados{
+        width: 40%;
+    }
+    .hVerano{
+        width: 40%;
     }
  }
  
