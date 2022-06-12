@@ -24,10 +24,10 @@ fetch(urltrack)
         let imagen = document.querySelector('.imgVerano');
 
         //cambiando con datos de la API
-        nombre.innerText += data.title
-        nombreArtista.innerText += "Artista: " + data.artist.name;
-        cancion.innerText += "Album:  " + data.album.title;
-        imagen.src += data.album.original.url;
+        nombre.innerText += data.data.title_short
+        nombreArtista.innerText += "Artista: " + data.data.artist.name;
+        cancion.innerText += "Album:  " + data.data.album.title;
+        imagen.src += data.data.album.original.url;
 
     })
     .catch(function(error){

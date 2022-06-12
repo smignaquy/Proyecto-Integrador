@@ -45,7 +45,7 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists
             contenido += `<div class="objetoIndex"> 
                             <img src=${data.data[i].album.cover} alt="Artista" class="imgIndex imgArtista borde"> 
                             <h3 class="indexLista borde">
-                                <a href="detail-track.html?id=${data.data[i].id}" class="itemIndex">${data.data[i].title}</a> 
+                                <a href="detail-track.html?id=${data.data[i].id}" class="itemIndex">${data.data[i].title_short}</a> 
                             </h3> 
                         </div>`
         }
