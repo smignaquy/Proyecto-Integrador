@@ -1,3 +1,18 @@
+//validando formularios
+
+let formulario = document.querySelector("form");
+let campoBuscador = document.querySelector(".barraBuscador")
+formulario.addEventListener('submit', function(evento){
+    evento.preventDefault();
+    if (campoBuscador.value ==''){
+        alert('Tu campo de busqueda esta vacio')
+    } else if (formulario.value.length > 3) {
+        alert('Tu busqueda debe tener al menos 3 caracteres')
+    } else{
+        this.submit() }	
+    })
+
+
 // artistas
 
 fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists')
@@ -85,6 +100,4 @@ fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists
     })
     .catch(function(error){
         console.log('El error fue: ' + error);
-    })
-
-
+    } )
