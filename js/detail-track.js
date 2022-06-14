@@ -38,6 +38,14 @@ fetch(urltrack)
     
     let link= document.querySelector("trackPlaylist");
 
+    //chequear si hay algo en favoritos 
+    let recuperoStorage = localStorage.getItem("favoritos");
+    if(recuperoStorage !== undefined) {
+        favoritos = JSON.parse(recuperoStorage)
+
+    }
+
+
     //Definir un evento para el link 
     link.addEventListener("click" , function(evento) {
        //evitar default del link 
