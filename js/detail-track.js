@@ -8,7 +8,7 @@ let id = queryStringObj.get('id');
 //obtener el id con
 
 
-let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/tracks/' + id
+let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + id
 
 fetch(urltrack)
     .then(function(response){
@@ -33,3 +33,7 @@ fetch(urltrack)
     .catch(function(error){
         console.log('El error fue: ' + error);
     })
+
+
+    //agregar cancion a play;ist
+    
