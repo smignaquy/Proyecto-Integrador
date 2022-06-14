@@ -50,7 +50,7 @@ fetch(urltrack)
        let cancionFavoritaTostring = JSON.stringify(cancionFavorita)
       
        console.log (JSON.stringify(cancionFavorita))
-       localStorage.setItem('favorita', cancionFavoritaTostring)
+       localStorage.setItem('favoritos', cancionFavoritaTostring)
 
        console.log(localStorage)
     })
