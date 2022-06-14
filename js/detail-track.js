@@ -33,3 +33,25 @@ fetch(urltrack)
     .catch(function(error){
         console.log('El error fue: ' + error);
     })
+    //Agregando a favoritos 
+    let favoritos = [] ;
+    
+    let link= document.querySelector("trackPlaylist");
+
+    //Definir un evento para el link 
+    link.addEventListener("click" , function(evento) {
+       //evitar default del link 
+       evento.preventDefault ()
+
+       //Agregar un dato al array
+      let cancionFavorita = favoritos.push(data.data[i].id)
+
+       //Agregar al localStorage. Antes hay que pasarlo a string 
+       let cancionFavoritaTostring = JSON.stringify(cancionFavorita)
+      
+       console.log (JSON.stringify(cancionFavorita))
+       localStorage.setItem('favorita', cancionFavoritaTostring)
+
+       console.log(localStorage)
+    })
+
