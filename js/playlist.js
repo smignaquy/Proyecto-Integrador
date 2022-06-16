@@ -9,7 +9,7 @@ let contenidoSection = ""
 //pedir a la api los datos de todos los ids
 for(let i=0; i<recuperoStorageToArray.length; i++){
     //fetch
-    let url = `https://api.giphy.com/v1/gifs/${recuperoStorageToArray[i]}?api_key=PuhlljnIs04eW2ezoSHpJ6Fov6102e4T`
+    let url = 
     
     fetch(url)
         .then(function(response){
@@ -19,7 +19,7 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
             console.log(data);
            //trabajo con los datos 
             contenidoSection += `<article>
-                                    <p class="name">Nombre: ${data.data.title}</p>
+                                    <p class="name">Nombre: $giu</p>
                                     <img class="image" src="${data.data.images.original.url}" alt="">
                                     <a href="detalleGif.html?id=${data.data.id}">ir a detalle </a>
                             </article>`
@@ -30,5 +30,4 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
         .catch(function(error){
             console.log(error);
         })
-
 }
