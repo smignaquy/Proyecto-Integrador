@@ -7,9 +7,9 @@ let id = queryStringObj.get('id');
 
 //obtener el id con
 
-let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/albums/' + id
+let urlAlbum = 'https://api.allorigins.win/raw?url=https://api.deezer.com/albums/' + id
 
-fetch(urltrack)
+fetch(urlAlbum)
     .then(function(response){
         return response.json();
     })
