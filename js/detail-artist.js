@@ -37,7 +37,9 @@ fetch(urlArtista)
                 let contenido ='';
 
                 for (let i=0 ; i<6 ; i++){
-                    contenido += `<li>${data.data[i].title}</li>`
+                    contenido += `<li>
+                                     <a href='detail-track.html?id=${data.data[i].id}'> ${data.data[i].title} </a>
+                                 </li>`
                 }
                 tracks.innerHTML = contenido;
             })
