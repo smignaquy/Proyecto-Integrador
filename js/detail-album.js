@@ -23,10 +23,31 @@ fetch(urltrack)
         let imagen = document.querySelector('.imgLaIsla');
 
         //cambiando con datos de la API
-        nombre.innerText += data.data.title
-        nombreArtista.innerText += "Artista: " + data.data.artist.name;
+        nombre.innerText += data.title
+        nombreArtista.innerText += "Artista: " + data.artist.name;
+        imagen.src = data.cover;
+
         temas.innerText += data.data.tracklist;
-        imagen.src += data.data.cover.original.url;
+
+                //buscando info de tracks 
+                fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/album/302127')
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(data){
+                    console.log(data)
+    
+                    let tracks = document.querySelector('.temasArtista');
+                    let contenido ='';
+    
+                    for (let i=0 ; ; i++){
+                        contenido += `<li> ${data.data[i].tracklist} </li>`
+                    }
+                    tracks.innerHTML = contenido;
+                })
+                .catch(function(error){
+                    console.log('El error fue: ' + error);
+                })
 
     })
     .catch(function(error){
