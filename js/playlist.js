@@ -11,7 +11,7 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
     //fetch
     let url = 
     
-    fetch(url)
+    fetch(urltrack)
         .then(function(response){
             return response.json()
         })
@@ -24,10 +24,16 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
                                     <a href="detalleGif.html?id=${data.data.id}">ir a detalle </a>
                             </article>`
 
-                            section.innerHTML = contenidoSection
 
+            contenido += `<article>
+                                    <p class="name"> ${data.data[i].title}</p>
+                            </article>`
+
+                            cancionesFavoritas.innerHTML = contenido;
+  
         })
         .catch(function(error){
             console.log(error);
         })
 }
+
