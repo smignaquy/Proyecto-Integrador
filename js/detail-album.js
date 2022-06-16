@@ -34,7 +34,9 @@ fetch(urlAlbum)
                     let contenido = "";
     
                     for (let i=0 ; tracklist.length ; i++){
-                        contenido += `<li> ${data.data[i].tracklist} </li>`
+                        contenido += `<li> 
+                        <a class="tAlbum" href='detail-track.html?id=${data.data[i].id}'> ${data.data[i].tracklist}  </a>
+                        </li>`
                     }
                     tracklist.innerHTML = contenido;
                 })
