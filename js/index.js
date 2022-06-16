@@ -1,12 +1,14 @@
 //validando formularios
 
 let formulario = document.querySelector("form");
-let campoBuscador = document.querySelector(".barraBuscador")
+let campoBuscador = document.querySelector(".barraBuscador");
+
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault();
-    if (campoBuscador.value ==''){
+    
+    if (campoBuscador.value == ''){
         alert('Tu campo de busqueda esta vacio')
-    } else if (formulario.value.length > 3) {
+    } else if (campoBuscador.value.length < 3) {
         alert('Tu busqueda debe tener al menos 3 caracteres')
     } else{
         this.submit() }	

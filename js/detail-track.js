@@ -42,22 +42,21 @@ fetch(urltrack)
     //chequear si hay algo en favoritos 
     let recuperoStorage = localStorage.getItem("favoritos");
     if(recuperoStorage !== null) {
-    let favoritosArray = JSON.parse(recuperoStorage)
-    favoritos = favoritosArray
+        favoritos  = JSON.parse(recuperoStorage);
     }
 
     //Definir un evento para el link 
     link.addEventListener("click" , function(evento) {
        //evitar default del link 
        evento.preventDefault ()
-
+    
        //Agregar un dato al array
-       let cancionFavorita = favoritos.push(data.data[i].id)
+       favoritos.push(id)
 
        //Agregar al localStorage. Antes hay que pasarlo a string 
-       let cancionFavoritaToString = JSON.stringify(cancionFavorita)
+       let cancionFavoritaToString = JSON.stringify(favoritos)
       
-       console.log (JSON.stringify(cancionFavorita))
+       //console.log (JSON.stringify(cancionFavorita))
        localStorage.setItem('favoritos', cancionFavoritaToString)
 
        console.log(localStorage)
