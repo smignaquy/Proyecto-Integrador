@@ -8,7 +8,7 @@ let id = queryStringObj.get('id');
 //obtener el id con
 
 
-let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/tracks/' + id
+let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + id
 
 fetch(urltrack)
     .then(function(response){
@@ -19,24 +19,25 @@ fetch(urltrack)
         
         //capturando del html
         let nombre = document.querySelector('.hVerano');
-        let nombreArtista = document.querySelector('.hRels');
+        let nombreArtista = document.querySelector('.relsTrack');
         let canciones = document.querySelector('.trackAlbum');
         let imagen = document.querySelector('.imgVerano');
 
         //cambiando con datos de la API
-        nombre.innerText += data.data.title_short
-        nombreArtista.innerText += "Artista: " + data.data.artist.name;
-        cancion.innerText += "Album:  " + data.data.album.title;
-        imagen.src += data.data.album.original.url;
+        nombre.innerText += data.title
+        nombreArtista.innerHTML += "Artista: " + data.artist.name;
+        canciones.innerText += "Album:  " + data.album.title;
+        imagen.src = data.album.cover;
 
     })
     .catch(function(error){
         console.log('El error fue: ' + error);
     })
-    
-    //Agregando a favoritos 
+
+    //agregar cancion a play;ist
+
     let favoritos = [] ;
-    let link = document.querySelector("trackPlaylist");
+    let link = document.querySelector(".trackPlaylist");
 
     //chequear si hay algo en favoritos 
     let recuperoStorage = localStorage.getItem("favoritos");
@@ -51,14 +52,15 @@ fetch(urltrack)
        evento.preventDefault ()
     
        //Agregar un dato al array
-      let cancionFavorita = favoritos.push(data.data[i].id)
+       let cancionFavorita = favoritos.push(data.data[i].id)
 
        //Agregar al localStorage. Antes hay que pasarlo a string 
-       let cancionFavoritaTostring = JSON.stringify(cancionFavorita)
+       let cancionFavoritaToString = JSON.stringify(cancionFavorita)
       
        console.log (JSON.stringify(cancionFavorita))
-       localStorage.setItem('favoritos', cancionFavoritaTostring)
+       localStorage.setItem('favoritos', cancionFavoritaToString)
 
        console.log(localStorage)
     })
+
 
