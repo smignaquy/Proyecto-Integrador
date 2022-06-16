@@ -24,16 +24,43 @@ fetch(urltrack)
         let imagen = document.querySelector('.imgVerano');
 
         //cambiando con datos de la API
-        nombre.innerText += data.data.title_short
-        nombreArtista.innerText += "Artista: " + data.data.artist.name;
-        cancion.innerText += "Album:  " + data.data.album.title;
-        imagen.src += data.data.album.original.url;
+        nombre.innerText += data.title
+        nombreArtista.innerHTML += "Artista: " + data.artist.name;
+        canciones.innerText += "Album:  " + data.album.title;
+        imagen.src = data.album.cover;
 
     })
     .catch(function(error){
         console.log('El error fue: ' + error);
     })
 
-
     //agregar cancion a play;ist
-    
+
+    let favoritos = [] ;
+    let link = document.querySelector(".trackPlaylist");
+
+    //chequear si hay algo en favoritos 
+    let recuperoStorage = localStorage.getItem("favoritos");
+    if(recuperoStorage !== null) {
+    let favoritosArray = JSON.parse(recuperoStorage)
+    favoritos = favoritosArray
+    }
+
+    //Definir un evento para el link 
+    link.addEventListener("click" , function(evento) {
+       //evitar default del link 
+       evento.preventDefault ()
+
+       //Agregar un dato al array
+       let cancionFavorita = favoritos.push(data.data[i].id)
+
+       //Agregar al localStorage. Antes hay que pasarlo a string 
+       let cancionFavoritaToString = JSON.stringify(cancionFavorita)
+      
+       console.log (JSON.stringify(cancionFavorita))
+       localStorage.setItem('favoritos', cancionFavoritaToString)
+
+       console.log(localStorage)
+    })
+
+
