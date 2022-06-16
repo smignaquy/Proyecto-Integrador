@@ -20,12 +20,13 @@ let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/
            let cancionesFavoritas = (".cajaCanciones")
            let contenido = "";
 
+           for (let i=0 ; i<6 ; i++){
             contenido += `<article>
                                     <p class="name"> ${data.data[i].title}</p>
                             </article>`
 
                             cancionesFavoritas.innerHTML = contenido;
-
+           }  
         })
         .catch(function(error){
             console.log(error);
