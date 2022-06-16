@@ -36,7 +36,7 @@ fetch(urltrack)
     
     //Agregando a favoritos 
     let favoritos = [] ;
-    let link= document.querySelector("trackPlaylist");
+    let link = document.querySelector("trackPlaylist");
 
     //chequear si hay algo en favoritos 
     let recuperoStorage = localStorage.getItem("favoritos");
@@ -49,7 +49,7 @@ fetch(urltrack)
     link.addEventListener("click" , function(evento) {
        //evitar default del link 
        evento.preventDefault ()
-
+    
        //Agregar un dato al array
       let cancionFavorita = favoritos.push(data.data[i].id)
 
