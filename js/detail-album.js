@@ -7,7 +7,7 @@ let id = queryStringObj.get('id');
 
 //obtener el id con
 
-let urlAlbum = 'https://api.allorigins.win/raw?url=https://api.deezer.com/albums/' + id
+let urlAlbum = 'https://api.allorigins.win/raw?url=https://api.deezer.com/album/' + id
 
 fetch(urlAlbum)
     .then(function(response){
@@ -27,10 +27,10 @@ fetch(urlAlbum)
         nombreArtista.innerText += "Artista: " + data.artist.name;
         imagen.src = data.cover;
 
-        temas.innerText += data.data.tracklist;
+        //temas.innerText += data.data.tracklist;
 
                 //buscando info de tracks 
-                fetch('https://api.allorigins.win/raw?url=https://api.deezer.com/album/302127')
+                fetch(urlAlbum)
                 .then(function(response){
                     return response.json();
                 })
