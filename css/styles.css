@@ -266,12 +266,19 @@ body{
     text-decoration: none;
     color: white;
  }
+ .trackPlaylist:hover{
+   cursor: pointer;
+   opacity: 0.9;
+ }
  .agregarPlaylist{
     background-color: rgb(179, 56, 56);
     width: 60%;
     margin-top: 20%;
     padding: 2%;
     text-align: center;
+ }
+ .agregarPlaylist:hover {
+   border-color: #ccc;
  }
 
 
