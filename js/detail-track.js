@@ -19,7 +19,7 @@ fetch(urltrack)
         
         //capturando del html
         let nombre = document.querySelector('.hVerano');
-        let nombreArtista = document.querySelector('.hRels');
+        let nombreArtista = document.querySelector('.relsTrack');
         let canciones = document.querySelector('.trackAlbum');
         let imagen = document.querySelector('.imgVerano');
 
