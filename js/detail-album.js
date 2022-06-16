@@ -19,7 +19,7 @@ fetch(urlAlbum)
         //capturando del html
         let nombre = document.querySelector('.hLaIsla');
         let nombreArtista = document.querySelector('.generoLaIsla');
-        let temas = document.querySelector('.temasLaIsla');
+        let temas = document.querySelector('.temasArtista');
         let imagen = document.querySelector('.imgLaIsla');
 
         //cambiando con datos de la API
@@ -31,14 +31,15 @@ fetch(urlAlbum)
 
                 //buscando info de tracks 
                     let tracklist = data.tracks.data;
+                    console.log(tracklist);
                     let contenido = "";
     
-                    for (let i=0 ; tracklist.length ; i++){
+                    for (let i=0 ; i < tracklist.length ; i++){
                         contenido += `<li> 
-                        <a class="tAlbum" href='detail-track.html?id=${data.data[i].id}'> ${data.data[i].tracklist}  </a>
+                        <a class="tAlbum" href='detail-track.html?id=${tracklist[i].id}'> ${tracklist[i].title}  </a>
                         </li>`
                     }
-                    tracklist.innerHTML = contenido;
+                    temas.innerHTML = contenido;
                 })
 
     .catch(function(error){
