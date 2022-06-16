@@ -1,34 +1,33 @@
-//Recuperar el array del storage
-let recuperoStorage = localStorage.getItem("favoritos");
-recuperoStorageToArray = JSON.parse(recuperoStorage);
+//id tiene que venir de la querystring
+let queryString = location.search
+//traer la qs
+let queryStringObj = new URLSearchParams(queryString)
+//transformarla en OL
+let id = queryStringObj.get('id');
 
-//capturar la sección para completar con datos
-let section= document.querySelector(".favoritos")
-let contenidoSection = ""
+//obtener el id con
 
-//pedir a la api los datos de todos los ids
-for(let i=0; i<recuperoStorageToArray.length; i++){
-    //fetch
-    let url = `https://api.giphy.com/v1/gifs/${recuperoStorageToArray[i]}?api_key=PuhlljnIs04eW2ezoSHpJ6Fov6102e4T`
+
+let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + id
     
-    fetch(url)
+    fetch(urltrack)
         .then(function(response){
             return response.json()
         })
         .then(function(data){
             console.log(data);
            //trabajo con los datos 
-            contenidoSection += `<article>
-                                    <p class="name">Nombre: ${data.data.title}</p>
-                                    <img class="image" src="${data.data.images.original.url}" alt="">
-                                    <a href="detalleGif.html?id=${data.data.id}">ir a detalle </a>
+           let cancionesFavoritas = (".cajaCanciones")
+           let contenido = "";
+
+            contenido += `<article>
+                                    <p class="name"> ${data.data[i].title}</p>
                             </article>`
 
-                            section.innerHTML = contenidoSection
+                            cancionesFavoritas.innerHTML = contenido;
 
         })
         .catch(function(error){
             console.log(error);
         })
 
-}
