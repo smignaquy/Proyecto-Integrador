@@ -18,7 +18,7 @@ let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/
             console.log(data);
     
            contenidoSection += `<article>
-                                    <p class="name"> ${data.title}</p>
+                                    <a class="tPlaylist" href='detail-track.html?id=${data.id}'> ${data.title} </a>
                             </article>`
 
             cancionesFavoritas.innerHTML = contenidoSection;
