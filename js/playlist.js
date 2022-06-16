@@ -1,14 +1,11 @@
-//id tiene que venir de la querystring
-let queryString = location.search
-//traer la qs
-let queryStringObj = new URLSearchParams(queryString)
-//transformarla en OL
-let id = queryStringObj.get('id');
 
 //obtener el id con
 
+let arrayDePlaylist = []
 
-let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + id
+for (let i=0 ; i<arrayDePlaylist.length ; i++){
+
+let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + arrayDePlaylist[i]
     
     fetch(urltrack)
         .then(function(response){
@@ -18,17 +15,19 @@ let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/
             console.log(data);
            //trabajo con los datos 
            let cancionesFavoritas = (".cajaCanciones")
-           let contenido = "";
 
-           for (let i=0 ; i<6 ; i++){
+
+
             contenido += `<article>
                                     <p class="name"> ${data.data[i].title}</p>
                             </article>`
 
                             cancionesFavoritas.innerHTML = contenido;
-           }  
+  
         })
         .catch(function(error){
             console.log(error);
         })
+    }
+    let contenido = "";
 
