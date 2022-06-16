@@ -1,11 +1,14 @@
+//Recuperar el array del storage
+let recuperoStorage = localStorage.getItem("favoritos");
+recuperoStorageToArray = JSON.parse(recuperoStorage);
 
-//obtener el id con
+//capturar la sección para completar con datos
+let cancionesFavoritas= document.querySelector(".cajaCanciones")
+let contenidoSection = ""
 
-let arrayDePlaylist = []
+for (let i=0 ; i<recuperoStorageToArray.length ; i++){
 
-for (let i=0 ; i<arrayDePlaylist.length ; i++){
-
-let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + arrayDePlaylist[i]
+let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/' + recuperoStorageToArray[i]
     
     fetch(urltrack)
         .then(function(response){
@@ -13,21 +16,17 @@ let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/
         })
         .then(function(data){
             console.log(data);
-           //trabajo con los datos 
-           let cancionesFavoritas = (".cajaCanciones")
-
-
-
-            contenido += `<article>
-                                    <p class="name"> ${data.data[i].title}</p>
+    
+           contenidoSection += `<article>
+                                    <p class="name"> ${data.title}</p>
                             </article>`
 
-                            cancionesFavoritas.innerHTML = contenido;
-  
-        })
-        .catch(function(error){
-            console.log(error);
-        })
-    }
-    let contenido = "";
+            cancionesFavoritas.innerHTML = contenidoSection;
+                            
+                })
+                .catch(function(error){
+                    console.log(error);
+                })
+            }
+
 
