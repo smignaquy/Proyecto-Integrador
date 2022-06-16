@@ -30,26 +30,15 @@ fetch(urlAlbum)
         //temas.innerText += data.data.tracklist;
 
                 //buscando info de tracks 
-                fetch(urlAlbum)
-                .then(function(response){
-                    return response.json();
-                })
-                .then(function(data){
-                    console.log(data)
+                    let tracklist = data.tracks.data;
+                    let contenido = "";
     
-                    let tracks = document.querySelector('.temasArtista');
-                    let contenido ='';
-    
-                    for (let i=0 ; ; i++){
+                    for (let i=0 ; tracklist.length ; i++){
                         contenido += `<li> ${data.data[i].tracklist} </li>`
                     }
-                    tracks.innerHTML = contenido;
-                })
-                .catch(function(error){
-                    console.log('El error fue: ' + error);
+                    tracklist.innerHTML = contenido;
                 })
 
-    })
     .catch(function(error){
         console.log('El error fue: ' + error);
     })
