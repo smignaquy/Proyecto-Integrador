@@ -459,7 +459,10 @@ body{
     padding: 0.8%;
     margin-bottom: 5%;
  }
-
+.tPlaylist{
+   color: white;
+   text-decoration: none;
+}
 
 
 

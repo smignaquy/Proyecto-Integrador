@@ -36,31 +36,50 @@ fetch(urltrack)
 
     //agregar cancion a play;ist
 
-    let favoritos = [] ;
-    let link = document.querySelector(".trackPlaylist");
+        //Guaradar favoritos
+        let favoritos = [];
 
-    //chequear si hay algo en favoritos 
-    let recuperoStorage = localStorage.getItem("favoritos");
-    if(recuperoStorage !== null) {
-        favoritos  = JSON.parse(recuperoStorage);
-    }
+        //chequear si hay algo en favoritos
+        let recuperoStorage = localStorage.getItem("favoritos");
 
-    //Definir un evento para el link 
-    link.addEventListener("click" , function(evento) {
-       //evitar default del link 
-       evento.preventDefault ()
+        if(recuperoStorage){ //null o undefined => false //tiene una variable => true
+            let favoritosToArray = JSON.parse(recuperoStorage)
+            favoritos = favoritosToArray
+        }
+
+        let link = document.querySelector(".agregarPlaylist");
+
+        if(favoritos.includes(id)){
+            //cambiarle el mensaje al usuario.
+            link.innerText = "Sacar de favoritos"
+        }
+
     
-       //Agregar un dato al array
-       favoritos.push(id)
+        link.addEventListener("click", function(evento){
+            //evitar default del link
+            evento.preventDefault()
 
-       //Agregar al localStorage. Antes hay que pasarlo a string 
-       let cancionFavoritaToString = JSON.stringify(favoritos)
-      
-       //console.log (JSON.stringify(cancionFavorita))
-       localStorage.setItem('favoritos', cancionFavoritaToString)
+            if(favoritos.includes(id)){
+                //Sacar el id del array
+                let sacar = favoritos.indexOf(id)
+                favoritos.splice(sacar, 1);
+                link.innerText="Agregar a favoritos"
 
-       console.log(localStorage)
-    })
+            } else {
+                //Agregar un data al array
+                favoritos.push(id);
+                link.innerText = "Sacar de favoritos"
+
+            }
+        
+            //Agregar el array a localStorage. Antes hay que pasarlo a string
+            let gifFavoritosToString = JSON.stringify(favoritos);
+            localStorage.setItem('favoritos', gifFavoritosToString)
+
+
+            console.log(localStorage.getItem("favoritos"));
+
+        })
 
     document.querySelector(".player").innerHTML =`<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>')`
     
