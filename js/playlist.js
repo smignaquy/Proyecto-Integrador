@@ -1,3 +1,4 @@
+
 //Recuperar el array del storage
 let recuperoStorage = localStorage.getItem("favoritos");
 recuperoStorageToArray = JSON.parse(recuperoStorage);
@@ -28,5 +29,4 @@ let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/
                     console.log(error);
                 })
             }
-
 
