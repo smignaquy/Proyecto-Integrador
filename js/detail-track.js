@@ -73,8 +73,8 @@ fetch(urltrack)
             }
         
             //Agregar el array a localStorage. Antes hay que pasarlo a string
-            let gifFavoritosToString = JSON.stringify(favoritos);
-            localStorage.setItem('favoritos', gifFavoritosToString)
+            let temaFavoritosToString = JSON.stringify(favoritos);
+            localStorage.setItem('favoritos', temaFavoritosToString)
 
 
             console.log(localStorage.getItem("favoritos"));
