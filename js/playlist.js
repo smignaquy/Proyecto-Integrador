@@ -28,5 +28,5 @@ let urltrack = 'https://api.allorigins.win/raw?url=https://api.deezer.com/track/
                 .catch(function(error){
                     console.log(error);
                 })
-            }
+}
 
